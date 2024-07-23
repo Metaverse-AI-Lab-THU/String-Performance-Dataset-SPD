@@ -130,7 +130,7 @@
                 <span class="link-block">
                   <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <i class="fas fa-database"></i>
                     </span>
                     <span>SPD-dataset (comming soon)</span>
                   </a>
@@ -284,6 +284,7 @@
         numpages = {10},
         keywords = {marker-less motion capture, string performance, multi-modality}
 }</code></pre>
+      <button onclick="copyBibTeX()">Copy BibTeX</button>
 
 <!-- <h2 class="title">Contact Us</h2>
 <style>
@@ -295,12 +296,12 @@
   <li>For detailed questions about this work, please contact ...</li>
   <li>We will ... </li>
 </ul> -->
+
+<!--<h2 class="title">Con</h2>
+      
+-->
     </div>
   </section>
-
-
-
-
 
   <footer class="footer">
     <div class="container">
@@ -318,4 +319,19 @@
 
 </body>
 
+<script>
+    function copyBibTeX() {
+        // 获取BibTeX代码块
+        const bibtexBlock = document.getElementById('bibtexBlock');
+        // 创建一个临时文本区域
+        const textArea = document.createElement('textarea');
+        textArea.value = bibtexBlock.innerText; // 获取BibTeX文本
+        document.body.appendChild(textArea); // 将文本区域添加到文档中
+        textArea.select(); // 选择文本
+        document.execCommand('copy'); // 执行复制命令
+        document.body.removeChild(textArea); // 移除临时文本区域
+        alert('BibTeX 已复制到剪贴板！'); // 提示用户
+    }
+</script>
+  
 </html>
