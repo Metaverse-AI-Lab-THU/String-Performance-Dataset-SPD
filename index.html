@@ -257,7 +257,7 @@
       button {
           position: absolute; /* 绝对定位 */
           right: 10px; /* 向右偏移的距离 */
-          top: 10px; /* 向上偏移的距离 */
+          top: 0px; /* 向上偏移的距离 */
           padding: 5px 10px;
           border: none;
           background-color: #007bff;
@@ -285,22 +285,22 @@
     <div class="BibTeX container">
       <h2 class="title">BibTeX</h2>
       <pre>
+        <code id="ArXiv_BibTeX">
         <button onclick="copyBibTeX('ArXiv_BibTeX')">
           <i class="fas fa-copy"></i>
-          <span Copy BibTeX from ArXiv.></span>
+          <span>Copy BibTeX from ArXiv.></span>
         </button>
-        <code id="ArXiv_BibTeX">
         @article{jin2024audio,
         title={Audio Matters Too! Enhancing Markerless Motion Capture with Audio Signals for String Performance Capture},
         author={Jin, Yitong and Qiu, Zhiping and Shi, Yi and Sun, Shuangpeng and Wang, Chongwu and Pan, Donghao and Zhao, Jiachen and Liang, Zhenghao and Wang, Yuan and Li, Xiaobing and others},
         journal={arXiv preprint arXiv:2405.04963},
         year={2024}
-  }</code></pre>
+          }</code></pre>
 
       <pre>
         <button onclick="copyBibTeX('ACM_BibTeX')">
           <i class="fas fa-copy"></i>
-          <span Copy BibTeX from ACM Library.></span>
+          <span>Copy BibTeX from ACM Library.></span>
         </button>
         <code id="ACM_BibTeX">
         @article{10.1145/3658235,
@@ -321,7 +321,7 @@
         articleno = {90},
         numpages = {10},
         keywords = {marker-less motion capture, string performance, multi-modality}
-}</code></pre>
+          }</code></pre>
 
       
 
