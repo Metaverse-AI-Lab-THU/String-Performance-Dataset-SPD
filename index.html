@@ -253,20 +253,55 @@
     </div>
   </section>
 
-
+  <style>
+      button {
+          position: absolute; /* 绝对定位 */
+          right: 10px; /* 向右偏移的距离 */
+          top: 10px; /* 向上偏移的距离 */
+          padding: 5px 10px;
+          border: none;
+          background-color: #007bff;
+          color: white;
+          cursor: pointer;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+      }
+      button span {
+          margin-left: 5px;
+          opacity: 0; /* 默认隐藏 */
+          transition: opacity 0.3s; /* 添加过渡效果 */
+      }
+      button:hover span {
+          opacity: 1; /* 悬停时显示文本 */
+      }
+      button:hover {
+          background-color: #0056b3; /* 悬停效果 */
+      }
+  </style> 
 
   <p style="margin-bottom: -1.5cm;"></p>
   <section class="section" id="BibTeX">
     <div class="BibTeX container">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{jin2024audio,
-      title={Audio Matters Too! Enhancing Markerless Motion Capture with Audio Signals for String Performance Capture},
-      author={Jin, Yitong and Qiu, Zhiping and Shi, Yi and Sun, Shuangpeng and Wang, Chongwu and Pan, Donghao and Zhao, Jiachen and Liang, Zhenghao and Wang, Yuan and Li, Xiaobing and others},
-      journal={arXiv preprint arXiv:2405.04963},
-      year={2024}
-  }</code><button onclick="copyBibTeX('ACM_BibTeX')">Copy BibTeX from ArXiv</button></pre>
+      <pre><code id="ArXiv_BibTeX">
+        <button onclick="copyBibTeX('ArXiv_BibTeX')">
+          <i class="fas fa-copy"></i>
+          <span Copy BibTeX from ArXiv.></span>
+        </button>
+        @article{jin2024audio,
+        title={Audio Matters Too! Enhancing Markerless Motion Capture with Audio Signals for String Performance Capture},
+        author={Jin, Yitong and Qiu, Zhiping and Shi, Yi and Sun, Shuangpeng and Wang, Chongwu and Pan, Donghao and Zhao, Jiachen and Liang, Zhenghao and Wang, Yuan and Li, Xiaobing and others},
+        journal={arXiv preprint arXiv:2405.04963},
+        year={2024}
+  }</code></pre>
 
-      <pre><code id="ACM_BibTeX">@article{10.1145/3658235,
+      <pre><code id="ACM_BibTeX">
+        <button onclick="copyBibTeX('ACM_BibTeX')">
+          <i class="fas fa-copy"></i>
+          <span Copy BibTeX from ACM Library.></span>
+        </button>
+        @article{10.1145/3658235,
         author = {Jin, Yitong and Qiu, Zhiping and Shi, Yi and Sun, Shuangpeng and Wang, Chongwu and Pan, Donghao and Zhao, Jiachen and Liang, Zhenghao and Wang, Yuan and Li, Xiaobing and Yu, Feng and Yu, Tao and Dai, Qionghai},
         title = {Audio Matters Too! Enhancing Markerless Motion Capture with Audio Signals for String Performance Capture},
         year = {2024},
@@ -284,7 +319,7 @@
         articleno = {90},
         numpages = {10},
         keywords = {marker-less motion capture, string performance, multi-modality}
-}</code><button onclick="copyBibTeX('ACM_BibTeX')">Copy BibTeX from ACM Library</button></pre>
+}</code></pre>
 
       
 
